@@ -1,6 +1,6 @@
 describe('Teste de login', () => {
 
-  it('Login com sucesso', () => {
+  it.only('Login com sucesso', () => {
     cy.visit('https://automationpratice.com.br/login')
     cy.get('#user').type('railton543h@gmail.com')
     cy.get('#password').type('railton22')
